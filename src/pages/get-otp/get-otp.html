@@ -1,0 +1,12 @@
+<ion-content padding>
+    <h1 text-center>Welcome to Smart Bills</h1>
+    <div id = "textfield">
+       <ion-item >
+          <ion-label for="num" floating>Mobile Number.</ion-label>
+          <ion-input type="text" [(ngModel)]="mno" value="91" required ></ion-input>
+       </ion-item>
+        <div style="text-align: center;padding:80px;">
+          <button  ion-button  round outline (click)="generateOtp()" >Generate OTP</button>
+        </div>
+    </div>
+</ion-content>

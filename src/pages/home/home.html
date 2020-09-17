@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-title>
+      <div text-center><button ion-button menuToggle icon-only float-left>
+        <ion-icon name="menu">
+        </ion-icon>
+      </button>Home</div>
+    </ion-title>
+</ion-header>
+
+<ion-content padding>
+  Welcome to Home page
+  <button ion-button (click)="takePhoto()" color="primary" clear>Take Photo</button>
+  <button ion-button (click)="getPhoto()" color="primary" clear>Select from gallery</button>
+  <p style="text-align:center">
+    <img  src="{{myPhoto}}">
+  </p>
+  <button ion-button (click)="sendImageForReview()">Upload
+    <ion-icon name="Upload-Image"></ion-icon>
+  </button>
+   <button ion-button (click)="extractData()" [disabled]="shouldDisable">Extract
+    <ion-icon name="Extract-Data"></ion-icon>
+  </button> 
+</ion-content>

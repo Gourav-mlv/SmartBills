@@ -1,0 +1,18 @@
+<ion-content padding>
+  <h1 text-center>OTP Verification</h1>
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Enter OTP Here:</ion-label>
+        <ion-input type="password" [(ngModel)]="otp" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+    <div>
+      <button ion-button float-left clear small (click)="changeNumber()">Change Number</button>
+      <button ion-button float-right small clear (click)="resendOtp()">Resend OTP</button>
+    </div>
+    <div style="text-align: center; padding-top: 80px;">
+      <button ion-button round outline (click)="verifyOtp()">Verify</button>
+    </div>
+  </div>
+</ion-content>

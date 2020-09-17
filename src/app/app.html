@@ -1,0 +1,25 @@
+<ion-menu [content]="content">
+<ion-header>
+    <ion-toolbar>
+    <ion-title>Menu</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+    <button ion-item (click)="getAllInvoice()">
+        All Invoices
+    </button>
+    <button ion-item (click)="getPendingInvoice()">
+        Pending Invoices
+    </button>
+    <button ion-item (click)="getApprovedInvoice()">
+        Approved Invoices
+    </button>
+    <button ion-item (click)="logout()">
+        Logout
+    </button>
+    </ion-list>
+</ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

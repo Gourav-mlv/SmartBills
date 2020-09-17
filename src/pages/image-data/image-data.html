@@ -1,0 +1,36 @@
+<style>
+    td{
+        padding-top: 10px;
+        font-size: large;
+    }
+    button {
+        float: right;
+        margin: 20px;
+    }
+</style>
+<ion-header>
+    <ion-navbar>
+        <ion-title>Bill Details</ion-title>
+       
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h1>Please confirm your details before submitting!</h1>
+    <table style="width: 100%;">
+        <tr>
+            <td>BILL DATE</td>
+            <td><input type="text" [(ngModel)]="res['Date ']" ></td>
+        </tr>
+        <tr>
+            <td>Total Amount(INR)</td>
+            <td><input type="text" [(ngModel)]="res['Amount ']"></td>
+        </tr>
+        <tr>
+            <td>Company</td>
+            <td><input type="text" [(ngModel)]="res['Company ']"></td>
+        </tr>
+    
+    </table>
+    <button ion-button (click)="submit_bill()"   >Submit Bill </button>
+</ion-content>

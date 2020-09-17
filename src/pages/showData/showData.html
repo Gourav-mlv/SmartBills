@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>View</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-card style="height: 100%;">
+
+    <ion-card-content>
+        <ion-card-title text-center>
+            Details
+        </ion-card-title>
+        <table style="width: 100%;">
+            <tr>
+                <td>Requested Date:</td>
+                <td>{{userData.date}}</td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td>{{userData.amount}}/-</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td *ngIf="userData.status==1" style="color: green;">Approved</td>
+                <td *ngIf="userData.status==0" style="color: black;">Pending</td>
+                <td *ngIf="userData.status==-1" style="color: orangered;">Rejected</td>
+            </tr>
+
+        </table>
+        <img src="" />
+    </ion-card-content>
+</ion-card>
