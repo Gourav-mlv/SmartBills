@@ -1,6 +1,6 @@
 # SmartBills
 
-Allows User to upload Bill images to apply for Reimbursment .
+Allows User(Employees) to upload Bill images to apply for Reimbursment from their Company.
 Which then are used to Extract data which will be saved in database.
 Users can also check the status of their Previous Requests.
 The Project is Build upon Ionic Framework with Cordova in Angular
