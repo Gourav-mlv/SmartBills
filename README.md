@@ -1,7 +1,7 @@
 # SmartBills
 
 Allows User(Employees) to upload Bill images to apply for Reimbursment from their Company.
-Which then are used to Extract data which will be saved in database.
+Images are used to extract bill data which will be saved in database and request.
 Users can also check the status of their Previous Requests.
 The Project is Build upon Ionic Framework with Cordova in Angular
 The DataBase is made in Mysql with NodeJS Server(Express JS) to Facilitate various requests.
