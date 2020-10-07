@@ -28,8 +28,8 @@ export class HomeService {
           aws.config.region = 'us-east-2'//this.SYSTEM_VARIABLE.REGION;
            
           var s3 = new aws.S3({
-            accessKeyId:'AKIAIA5HRM44AXOUKRFA',   //needs to replaced from credential
-            secretAccessKey:'BQhQRfPsnkfmePKobbVrGphqfoUrXwmNOeu8zKQE'    //needs to replaced from credential
+            accessKeyId:'##############',   //needs to replaced from credential
+            secretAccessKey:'######################'    //needs to replaced from credential
             // ,apiVersion: "2006-03-01",
             // params: { Bucket: this.SYSTEM_VARIABLE.S3.BUCKET_NAME }
           });
